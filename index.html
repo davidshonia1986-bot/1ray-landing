@@ -3,64 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1RAY — Первый Луч | Личный астрологический ассистент</title>
+    <title>1RAY — Первый Луч Майя | Твой майянский оракул</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: #0a0a14;
-            color: #e0e0ff;
+            background: #1a0f0a;
+            color: #e8d5b0;
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
+            background-image: radial-gradient(circle at 20% 30%, rgba(180, 130, 60, 0.08) 0%, transparent 50%),
+                              radial-gradient(circle at 80% 70%, rgba(0, 150, 150, 0.06) 0%, transparent 50%);
         }
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 24px;
         }
         h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            color: #f0e6ff;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            color: #f7e3c0;
         }
         h1 {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            background: linear-gradient(135deg, #d4af37, #b280ff);
+            font-size: clamp(2.8rem, 7vw, 4.5rem);
+            background: linear-gradient(135deg, #d4af37, #c0843c, #4dd0c0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            line-height: 1.2;
         }
         h2 {
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size: clamp(2rem, 5vw, 2.8rem);
             margin-bottom: 1.5rem;
             text-align: center;
+            color: #d4af37;
         }
         .subtitle {
-            color: #b0b0d0;
+            color: #c0a880;
             font-size: 1.2rem;
             text-align: center;
-            max-width: 700px;
+            max-width: 650px;
             margin: 0 auto 2rem auto;
         }
         .btn {
             display: inline-block;
-            background: linear-gradient(135deg, #d4af37, #ffd700);
-            color: #0a0a14;
+            background: linear-gradient(135deg, #d4af37, #b8860b);
+            color: #1a0f0a;
             font-weight: 600;
             padding: 16px 36px;
-            border-radius: 50px;
+            border-radius: 8px;
             text-decoration: none;
             font-size: 1.1rem;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
         }
         .btn-outline {
             background: transparent;
@@ -69,8 +75,7 @@
             box-shadow: none;
         }
         .btn-outline:hover {
-            background: rgba(212, 175, 55, 0.1);
-            transform: translateY(-2px);
+            background: rgba(212, 175, 55, 0.08);
         }
 
         /* Header */
@@ -79,25 +84,26 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
         }
         .logo {
             display: flex;
             align-items: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
             color: #d4af37;
             font-weight: 700;
         }
         .logo span {
             margin-left: 8px;
-            background: linear-gradient(135deg, #d4af37, #b280ff);
+            background: linear-gradient(135deg, #d4af37, #4dd0c0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         /* Hero */
         .hero {
-            padding: 80px 0;
+            padding: 100px 0 80px;
             display: flex;
             align-items: center;
             gap: 60px;
@@ -110,8 +116,8 @@
             margin-bottom: 1.5rem;
         }
         .hero-text p {
-            font-size: 1.2rem;
-            color: #c0c0e0;
+            font-size: 1.25rem;
+            color: #c0a880;
             margin-bottom: 2rem;
         }
         .hero-visual {
@@ -119,34 +125,36 @@
             text-align: center;
             position: relative;
         }
-        .prism {
-            width: 250px;
-            height: 250px;
-            background: radial-gradient(circle at center, rgba(180, 130, 255, 0.2), transparent);
+        .calendar-glyph {
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1), transparent);
+            border: 2px solid rgba(212, 175, 55, 0.3);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
+            animation: rotate 30s linear infinite;
         }
-        .prism::before {
+        .calendar-glyph::before {
             content: '';
             position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            width: 60%;
+            height: 60%;
+            border: 2px solid rgba(212, 175, 55, 0.2);
             border-radius: 50%;
-            animation: rotate 20s linear infinite;
         }
-        .prism-beam {
+        .calendar-glyph::after {
+            content: '';
             position: absolute;
-            width: 4px;
-            height: 120px;
-            background: linear-gradient(to top, #d4af37, #b280ff, transparent);
-            animation: pulse 2s infinite;
+            width: 20%;
+            height: 20%;
+            background: #d4af37;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
         @keyframes rotate { 100% { transform: rotate(360deg); } }
-        @keyframes pulse { 0%, 100% { opacity: 0.5; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(1.2); } }
 
         /* Steps */
         .steps {
@@ -157,21 +165,26 @@
         }
         .step {
             text-align: center;
+            background: rgba(212, 175, 55, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 20px;
+            padding: 40px 20px;
+            transition: all 0.3s ease;
+        }
+        .step:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
         }
         .step-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            background: rgba(180, 130, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
         .step h3 {
             font-size: 1.4rem;
             margin-bottom: 0.5rem;
+        }
+        .step p {
+            color: #a09070;
         }
 
         /* Features */
@@ -182,9 +195,9 @@
             gap: 40px;
         }
         .feature {
-            background: rgba(255,255,255,0.03);
+            background: rgba(212, 175, 55, 0.03);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(212, 175, 55, 0.08);
             border-radius: 20px;
             padding: 30px;
             transition: all 0.3s ease;
@@ -194,11 +207,11 @@
             transform: translateY(-5px);
         }
         .feature h3 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin-bottom: 0.8rem;
         }
         .feature p {
-            color: #a0a0c0;
+            color: #b0a080;
         }
 
         /* Testimonials */
@@ -209,14 +222,15 @@
             gap: 40px;
         }
         .testimonial {
-            background: rgba(180, 130, 255, 0.05);
+            background: rgba(212, 175, 55, 0.05);
             border-radius: 20px;
             padding: 30px;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(212, 175, 55, 0.08);
         }
         .testimonial p {
             font-style: italic;
             margin-bottom: 1rem;
+            color: #c0a880;
         }
         .testimonial .author {
             color: #d4af37;
@@ -228,8 +242,8 @@
             padding: 80px 0;
         }
         .faq-item {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.05);
+            background: rgba(212, 175, 55, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.08);
             border-radius: 15px;
             padding: 20px 30px;
             margin-bottom: 20px;
@@ -238,9 +252,10 @@
         .faq-item h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
+            color: #d4af37;
         }
         .faq-item p {
-            color: #a0a0c0;
+            color: #a09070;
             display: none;
         }
         .faq-item.active p {
@@ -249,7 +264,7 @@
 
         /* CTA */
         .cta {
-            padding: 80px 0;
+            padding: 100px 0;
             text-align: center;
         }
         .cta h2 {
@@ -260,8 +275,9 @@
         footer {
             padding: 40px 0;
             text-align: center;
-            color: #606080;
+            color: #706050;
             font-size: 0.9rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
         }
         footer a {
             color: #d4af37;
@@ -286,82 +302,76 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">⚡<span>1RAY</span></div>
-            <a href="https://t.me/d_1raybot" target="_blank" class="btn-outline">Открыть в Telegram</a>
+            <div class="logo">☀️<span>1RAY</span></div>
+            <a href="https://t.me/d_1raybot" target="_blank" class="btn-outline">Открыть оракула</a>
         </header>
 
         <section class="hero">
             <div class="hero-text">
-                <h1>Узнай, кто ты есть на самом деле</h1>
-                <p>1RAY собирает твой уникальный архетипический портрет по дате рождения, имени и времени, чтобы предсказывать энергии дня и отвечать на сокровенные вопросы голосом мудрого друга.</p>
-                <a href="https://t.me/d_1raybot" target="_blank" class="btn">Запустить бота</a>
+                <h1>Открой свой майянский Кин</h1>
+                <p>Жрец Цолькина ждёт тебя. Введи дату рождения — и узнай свою печать, тон и энергии дня по священному календарю майя. Никакой астрологии, только древняя мудрость Цолькина.</p>
+                <a href="https://t.me/d_1raybot" target="_blank" class="btn">Узнать свой Кин</a>
             </div>
             <div class="hero-visual">
-                <div class="prism">
-                    <div class="prism-beam" style="transform: rotate(0deg)"></div>
-                    <div class="prism-beam" style="transform: rotate(72deg)"></div>
-                    <div class="prism-beam" style="transform: rotate(144deg)"></div>
-                    <div class="prism-beam" style="transform: rotate(216deg)"></div>
-                    <div class="prism-beam" style="transform: rotate(288deg)"></div>
-                </div>
+                <div class="calendar-glyph"></div>
             </div>
         </section>
 
         <section>
             <h2>Как это работает?</h2>
-            <p class="subtitle">Всего три шага — и ты получишь персональный портрет души</p>
+            <p class="subtitle">Три простых шага к майянской мудрости</p>
             <div class="steps">
                 <div class="step">
                     <div class="step-icon">📅</div>
-                    <h3>Ты вводишь данные</h3>
-                    <p>Дата, время, место рождения и имя — всё, что нужно для глубокого анализа.</p>
+                    <h3>Введи дату рождения</h3>
+                    <p>Просто напиши её боту — и он мгновенно определит твой Кин по календарю Цолькин.</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">🔮</div>
-                    <h3>6 систем собирают архетипы</h3>
-                    <p>И-Цзин, Матрица, Майя, Астрология, Нумерология, Шумерские Мэ — все работают вместе.</p>
+                    <h3>Узнай свою печать и тон</h3>
+                    <p>Ты получишь описание своей печати (одной из 20 солнечных печатей) и тона (13 лунных тонов).</p>
                 </div>
                 <div class="step">
                     <div class="step-icon">✨</div>
-                    <h3>Квантовый консенсус</h3>
-                    <p>Пересечения тегов создают твой уникальный портрет и прогнозы.</p>
+                    <h3>Живи в ритме Вселенной</h3>
+                    <p>Каждый день Жрец будет присылать тебе прогноз, основанный на энергиях твоего Кине и текущего дня.</p>
                 </div>
             </div>
         </section>
 
         <section>
             <h2>Что ты получишь?</h2>
-            <p class="subtitle">Никакой воды — только глубокие, практичные и тёплые советы от всех 6 систем</p>
+            <p class="subtitle">Твой личный майянский оракул всегда рядом</p>
             <div class="features">
                 <div class="feature">
-                    <h3>☀️ Прогнозы на день, неделю, месяц</h3>
-                    <p>Без сложных терминов. Каждый день с тобой говорит новый советник — Мудрец Перемен, Звёздный Странник или Голос Энлиля.</p>
+                    <h3>☀️ Прогноз на день</h3>
+                    <p>Каждое утро Жрец Цолькина будет рассказывать, какие энергии несёт тебе сегодняшний Кин, и давать практику дня.</p>
                 </div>
                 <div class="feature">
-                    <h3>💫 Совместимость</h3>
-                    <p>Узнай, как резонируют две души. Глубокий анализ твоей пары с практичным советом.</p>
+                    <h3>💫 Совместимость по Цолькину</h3>
+                    <p>Сравни свою печать и тон с другим человеком — узнайте, насколько вы резонируете и как гармонизировать отношения.</p>
                 </div>
                 <div class="feature">
-                    <h3>🔮 Оракул</h3>
-                    <p>Тёплый, мудрый, ироничный философ, который отвечает на любой вопрос, опираясь на твои архетипы.</p>
+                    <h3>🔮 Оракул майя</h3>
+                    <p>Задай любой вопрос Жрецу — и получи мудрый, загадочный, но практичный ответ, связанный с твоей печатью.</p>
                 </div>
                 <div class="feature">
                     <h3>📓 Дневник наблюдателя</h3>
-                    <p>Записывай события дня, а Оракул будет учиться на твоём опыте и становиться точнее.</p>
+                    <p>Записывай события дня, а Оракул будет учиться на твоём опыте и давать всё более точные советы.</p>
                 </div>
             </div>
         </section>
 
         <section>
             <h2>Отзывы</h2>
-            <p class="subtitle">Что говорят первые пользователи</p>
+            <p class="subtitle">Что говорят первые исследователи Цолькина</p>
             <div class="testimonials">
                 <div class="testimonial">
-                    <p>«Никогда не думал, что бот может так точно описать моё состояние. Теперь начинаю день с прогноза — это как разговор с понимающим другом.»</p>
+                    <p>«Никогда не думал, что календарь майя может быть таким точным. Моя печать — Жёлтое Солнце, и прогнозы действительно помогают мне начинать день правильно.»</p>
                     <div class="author">— Артём</div>
                 </div>
                 <div class="testimonial">
-                    <p>«Совместимость показала то, что я интуитивно чувствовала. Спасибо, 1RAY, теперь я знаю, над чем работать в отношениях.»</p>
+                    <p>«Проверила совместимость с парнем — резонанс 78%! Очень интересно, что наши печати действительно дополняют друг друга. Теперь слушаем советы Жреца.»</p>
                     <div class="author">— Елена</div>
                 </div>
             </div>
@@ -371,27 +381,27 @@
             <h2>Часто задаваемые вопросы</h2>
             <div class="faq">
                 <div class="faq-item" onclick="this.classList.toggle('active')">
+                    <h3>Что такое Кин, печать и тон?</h3>
+                    <p>Кин — это твой личный номер в 260-дневном календаре Цолькин. Печать (20 солнечных печатей) описывает твою сущность, а тон (13 лунных тонов) — твой ритм и стиль действия.</p>
+                </div>
+                <div class="faq-item" onclick="this.classList.toggle('active')">
                     <h3>Это бесплатно?</h3>
-                    <p>Прогнозы и анализ профиля полностью бесплатны. Расширенные функции (Оракул и Дневник) — по подписке.</p>
+                    <p>Создание профиля и прогноз на день полностью бесплатны. Оракул и Дневник — по подписке Premium.</p>
                 </div>
                 <div class="faq-item" onclick="this.classList.toggle('active')">
-                    <h3>Как вы получаете такие точные прогнозы?</h3>
-                    <p>Мы используем математические модели 6 эзотерических систем и консенсус их тегов, а интерпретирует AI в тёплом, человеческом тоне.</p>
-                </div>
-                <div class="faq-item" onclick="this.classList.toggle('active')">
-                    <h3>Нужно ли разбираться в астрологии?</h3>
-                    <p>Нет, бот говорит на простом языке, без терминов. Ты просто получаешь понятные советы.</p>
+                    <h3>Нужно ли знать что-то о майя?</h3>
+                    <p>Нет, Жрец говорит простым языком, без терминов. Ты просто получаешь тёплые и практичные советы на каждый день.</p>
                 </div>
                 <div class="faq-item" onclick="this.classList.toggle('active')">
                     <h3>Мои данные в безопасности?</h3>
-                    <p>Все данные хранятся локально и не передаются третьим лицам.</p>
+                    <p>Да, всё хранится локально и не передаётся третьим лицам.</p>
                 </div>
             </div>
         </section>
 
         <section class="cta">
-            <h2>Первый Луч уже горит для тебя</h2>
-            <a href="https://t.me/d_1raybot" target="_blank" class="btn">Открыть бота</a>
+            <h2>Твой Кин уже ждёт тебя</h2>
+            <a href="https://t.me/d_1raybot" target="_blank" class="btn">Открыть майянского оракула</a>
         </section>
 
         <footer>
