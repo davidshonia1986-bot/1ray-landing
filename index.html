@@ -316,7 +316,7 @@
           <a href="#features" class="text-sm text-gray-400 hover:text-ray-cyan transition-colors">Возможности</a>
           <a href="#reviews" class="text-sm text-gray-400 hover:text-ray-cyan transition-colors">Отзывы</a>
           <a href="#faq" class="text-sm text-gray-400 hover:text-ray-cyan transition-colors">FAQ</a>
-          <a href="https://t.me/d_1raybot" target="_blank" rel="noopener"
+          <a href="https://t.me/Predskazaniya_mayan_bot" target="_blank" rel="noopener"
              class="btn-glow relative px-5 py-2.5 bg-ray-cyan/10 border border-ray-cyan/30 rounded-full text-ray-cyan text-sm font-semibold hover:bg-ray-cyan/20 transition-all">
             Открыть в Telegram
           </a>
@@ -338,7 +338,7 @@
         <a href="#features" class="block text-gray-300 hover:text-ray-cyan transition-colors py-2">Возможности</a>
         <a href="#reviews" class="block text-gray-300 hover:text-ray-cyan transition-colors py-2">Отзывы</a>
         <a href="#faq" class="block text-gray-300 hover:text-ray-cyan transition-colors py-2">FAQ</a>
-        <a href="https://t.me/d_1raybot" target="_blank" rel="noopener"
+        <a href="https://t.me/Predskazaniya_mayan_bot" target="_blank" rel="noopener"
            class="block text-center px-5 py-3 bg-ray-cyan/10 border border-ray-cyan/30 rounded-full text-ray-cyan font-semibold hover:bg-ray-cyan/20 transition-all">
           Открыть в Telegram
         </a>
@@ -350,7 +350,6 @@
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
     <!-- Background effects -->
     <div class="absolute inset-0">
-      <!-- Nebula clouds -->
       <div class="nebula absolute top-20 left-[10%] w-[500px] h-[500px] bg-ray-cyan/8" style="animation-delay: 0s;"></div>
       <div class="nebula absolute bottom-20 right-[15%] w-[400px] h-[400px] bg-ray-purple/8" style="animation-delay: 5s;"></div>
       <div class="nebula absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-ray-gold/5" style="animation-delay: 10s;"></div>
@@ -362,10 +361,9 @@
       <div id="stars" class="absolute inset-0"></div>
     </div>
 
-    <!-- Calendar Circle SVG - Detailed Mayan Calendar -->
+    <!-- Calendar Circle SVG -->
     <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
       <div class="relative w-[500px] h-[500px] md:w-[700px] md:h-[700px] opacity-30 calendar-glow">
-        <!-- Outermost ring - 20 day signs -->
         <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full rotate-slow">
           <defs>
             <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -382,20 +380,12 @@
               <stop offset="100%" stop-color="#d4a843"/>
             </linearGradient>
           </defs>
-          <!-- Ring 1 - outermost dashed -->
           <circle cx="200" cy="200" r="195" fill="none" stroke="url(#ringGrad)" stroke-width="0.4" stroke-dasharray="2 6" opacity="0.5"/>
-          <!-- Ring 2 - solid thin -->
           <circle cx="200" cy="200" r="188" fill="none" stroke="url(#ringGrad)" stroke-width="0.3" opacity="0.4"/>
-          <!-- Ring 3 - glyph markers -->
           <circle cx="200" cy="200" r="180" fill="none" stroke="url(#ringGrad2)" stroke-width="0.5" stroke-dasharray="4 8"/>
-          <!-- Ring 4 -->
           <circle cx="200" cy="200" r="165" fill="none" stroke="url(#ringGrad3)" stroke-width="0.3" stroke-dasharray="2 10" opacity="0.6"/>
-          <!-- Ring 5 -->
           <circle cx="200" cy="200" r="150" fill="none" stroke="url(#ringGrad)" stroke-width="0.5" stroke-dasharray="6 4"/>
-          <!-- Ring 6 - inner -->
           <circle cx="200" cy="200" r="135" fill="none" stroke="url(#ringGrad2)" stroke-width="0.3" opacity="0.5"/>
-
-          <!-- 20 glyph markers (Tzolkin day signs) -->
           <g>
             <circle cx="200" cy="5" r="3" fill="#00e5c7" class="glyph-marker" style="animation-delay: 0s;"/>
             <circle cx="258" cy="12" r="3" fill="#00e5c7" class="glyph-marker" style="animation-delay: 0.1s;"/>
@@ -418,12 +408,9 @@
             <circle cx="95" cy="50" r="3" fill="#00e5c7" class="glyph-marker" style="animation-delay: 1.8s;"/>
             <circle cx="150" cy="20" r="3" fill="#00e5c7" class="glyph-marker" style="animation-delay: 1.9s;"/>
           </g>
-
-          <!-- Center symbol - Sun/Kin -->
           <circle cx="200" cy="200" r="25" fill="none" stroke="url(#ringGrad)" stroke-width="1" opacity="0.6"/>
           <circle cx="200" cy="200" r="15" fill="none" stroke="url(#ringGrad2)" stroke-width="0.8" opacity="0.5"/>
           <circle cx="200" cy="200" r="5" fill="url(#ringGrad)" opacity="0.8"/>
-          <!-- Sun rays -->
           <g opacity="0.3">
             <line x1="200" y1="170" x2="200" y2="160" stroke="#d4a843" stroke-width="1"/>
             <line x1="200" y1="230" x2="200" y2="240" stroke="#d4a843" stroke-width="1"/>
@@ -435,12 +422,9 @@
             <line x1="179" y1="221" x2="172" y2="228" stroke="#d4a843" stroke-width="1"/>
           </g>
         </svg>
-
-        <!-- Second ring - counter-rotating 13 tones -->
         <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full rotate-reverse">
           <circle cx="200" cy="200" r="120" fill="none" stroke="url(#ringGrad2)" stroke-width="0.5" stroke-dasharray="3 7"/>
           <circle cx="200" cy="200" r="105" fill="none" stroke="url(#ringGrad3)" stroke-width="0.3" stroke-dasharray="2 8"/>
-          <!-- 13 tone markers -->
           <circle cx="200" cy="80" r="2.5" fill="#d4a843" opacity="0.7"/>
           <circle cx="290" cy="105" r="2.5" fill="#00e5c7" opacity="0.7"/>
           <circle cx="320" cy="200" r="2.5" fill="#8b5cf6" opacity="0.7"/>
@@ -455,11 +439,8 @@
           <circle cx="310" cy="245" r="2.5" fill="#8b5cf6" opacity="0.7"/>
           <circle cx="245" cy="315" r="2.5" fill="#d4a843" opacity="0.7"/>
         </svg>
-
-        <!-- Innermost ring - Galactic Spin -->
         <svg viewBox="0 0 400 400" class="absolute inset-0 w-full h-full" style="animation: rotateCircle 30s linear infinite;">
           <circle cx="200" cy="200" r="85" fill="none" stroke="url(#ringGrad)" stroke-width="0.4" stroke-dasharray="1 5"/>
-          <!-- Spiral arms hint -->
           <path d="M200,200 Q220,180 240,200 Q220,220 200,200" fill="none" stroke="url(#ringGrad)" stroke-width="0.3" opacity="0.4"/>
           <path d="M200,200 Q180,220 200,240 Q220,220 200,200" fill="none" stroke="url(#ringGrad2)" stroke-width="0.3" opacity="0.4"/>
           <path d="M200,200 Q180,180 160,200 Q180,220 200,200" fill="none" stroke="url(#ringGrad3)" stroke-width="0.3" opacity="0.4"/>
@@ -469,18 +450,15 @@
     </div>
 
     <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-      <!-- Glyphs decoration -->
       <div class="glyph top-20 left-10 md:left-20 text-4xl md:text-6xl text-ray-cyan float">☽</div>
       <div class="glyph top-32 right-10 md:right-24 text-3xl md:text-5xl text-ray-purple float-delay">◈</div>
       <div class="glyph bottom-32 left-16 md:left-32 text-4xl md:text-5xl text-ray-gold float-delay2">✧</div>
 
-      <!-- Badge -->
       <div class="fade-in-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-ray-card border border-ray-border mb-8">
         <span class="w-2 h-2 rounded-full bg-ray-cyan animate-pulse"></span>
         <span class="text-xs md:text-sm text-gray-400 font-medium">Майянский календарь Цолькин • Система Dreamspell</span>
       </div>
 
-      <!-- Title -->
       <h1 class="fade-in-up delay-1 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
         <span class="text-white">Узнай свой </span>
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-ray-cyan via-ray-purple to-ray-gold">Кин</span>
@@ -488,14 +466,12 @@
         <span class="text-white">и управляй реальностью</span>
       </h1>
 
-      <!-- Subtitle -->
       <p class="fade-in-up delay-2 text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
         <span class="text-ray-cyan font-semibold">1RAY</span> — твой личный майянский оракул. Построй полный портрет души, получай прогнозы на каждый день и узнай, с кем ты по-настоящему совместим.
       </p>
 
-      <!-- CTA Buttons -->
       <div class="fade-in-up delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://t.me/d_1raybot" target="_blank" rel="noopener"
+        <a href="https://t.me/Predskazaniya_mayan_bot" target="_blank" rel="noopener"
            class="btn-glow relative group px-8 py-4 bg-gradient-to-r from-ray-cyan to-ray-purple rounded-full text-white font-semibold text-lg shadow-lg shadow-ray-cyan/20 transition-all">
           <span class="relative z-10 flex items-center gap-2">
             <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -513,7 +489,6 @@
         </a>
       </div>
 
-      <!-- Stats -->
       <div class="fade-in-up delay-4 mt-16 grid grid-cols-3 gap-4 md:gap-8 max-w-lg mx-auto">
         <div class="text-center">
           <div class="text-2xl md:text-3xl font-bold text-ray-cyan">20</div>
@@ -530,7 +505,6 @@
       </div>
     </div>
 
-    <!-- Scroll indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
       <div class="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center pt-2">
         <div class="w-1 h-2 bg-ray-cyan rounded-full"></div>
@@ -550,7 +524,6 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-8 md:gap-12">
-        <!-- Step 1 -->
         <div class="reveal text-center group" style="transition-delay: 0.1s;">
           <div class="relative w-20 h-20 mx-auto mb-6">
             <div class="absolute inset-0 bg-ray-cyan/10 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
@@ -565,7 +538,6 @@
           <p class="text-gray-400 text-sm leading-relaxed">Просто напиши свою дату боту в Telegram. Никаких регистраций и сложных форм.</p>
         </div>
 
-        <!-- Step 2 -->
         <div class="reveal text-center group" style="transition-delay: 0.2s;">
           <div class="relative w-20 h-20 mx-auto mb-6">
             <div class="absolute inset-0 bg-ray-purple/10 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
@@ -580,7 +552,6 @@
           <p class="text-gray-400 text-sm leading-relaxed">Бот рассчитает твой Кин, печать, тон и все 5 позиций полного Оракула.</p>
         </div>
 
-        <!-- Step 3 -->
         <div class="reveal text-center group" style="transition-delay: 0.3s;">
           <div class="relative w-20 h-20 mx-auto mb-6">
             <div class="absolute inset-0 bg-ray-gold/10 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
@@ -611,42 +582,36 @@
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
         <div class="reveal gradient-border p-6 rounded-2xl group hover:scale-[1.02] transition-transform" style="transition-delay: 0.05s;">
           <div class="text-3xl mb-4">🌀</div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-ray-cyan transition-colors">Прогноз на день</h3>
           <p class="text-gray-400 text-sm leading-relaxed">С юмором, рифмой и практичными советами. Каждое утро — новый мудрый прогноз, написанный простым языком.</p>
         </div>
 
-        <!-- Card 2 -->
         <div class="reveal gradient-border p-6 rounded-2xl group hover:scale-[1.02] transition-transform" style="transition-delay: 0.1s;">
           <div class="text-3xl mb-4">🔮</div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-ray-purple transition-colors">Твой профиль</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Кин, печать, тон, Аналог, Антипод, Скрытая и Направляющая силы — полный архетипический портрет.</p>
         </div>
 
-        <!-- Card 3 -->
         <div class="reveal gradient-border p-6 rounded-2xl group hover:scale-[1.02] transition-transform" style="transition-delay: 0.15s;">
           <div class="text-3xl mb-4">💞</div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-ray-gold transition-colors">Совместимость</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Узнай, как резонируют две души. Глубокий анализ энергетической совместимости с любым человеком.</p>
         </div>
 
-        <!-- Card 4 -->
         <div class="reveal gradient-border p-6 rounded-2xl group hover:scale-[1.02] transition-transform" style="transition-delay: 0.2s;">
           <div class="text-3xl mb-4">⏰</div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-ray-cyan transition-colors">Умные напоминания</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Бот подскажет лучший день для встречи, поездки или важного решения. Никакой рутины — только точные рекомендации.</p>
         </div>
 
-        <!-- Card 5 -->
         <div class="reveal gradient-border p-6 rounded-2xl group hover:scale-[1.02] transition-transform" style="transition-delay: 0.25s;">
           <div class="text-3xl mb-4">🃏</div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-ray-purple transition-colors">Оракул</h3>
           <p class="text-gray-400 text-sm leading-relaxed">Задай любой вопрос и получи мудрый ответ. Бот интерпретирует энергию дня и даёт практический совет.</p>
         </div>
 
-        <!-- Card 6 -->
         <div class="reveal gradient-border p-6 rounded-2xl group hover:scale-[1.02] transition-transform" style="transition-delay: 0.3s;">
           <div class="text-3xl mb-4">📔</div>
           <h3 class="text-lg font-bold mb-2 group-hover:text-ray-gold transition-colors">Дневник наблюдателя</h3>
@@ -668,11 +633,9 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 items-start">
-        <!-- Phone mockup -->
         <div class="reveal flex justify-center" style="transition-delay: 0.1s;">
           <div class="phone-mockup w-[280px] md:w-[300px]">
             <div class="phone-screen p-4 space-y-3">
-              <!-- Chat messages -->
               <div class="text-center text-xs text-gray-600 py-2">Сегодня, 09:15</div>
 
               <div class="flex justify-end">
@@ -709,7 +672,6 @@
           </div>
         </div>
 
-        <!-- Testimonials -->
         <div class="space-y-6">
           <div class="reveal gradient-border p-6 rounded-2xl" style="transition-delay: 0.15s;">
             <div class="flex items-center gap-3 mb-3">
@@ -760,7 +722,6 @@
       </div>
 
       <div class="space-y-3">
-        <!-- FAQ 1 -->
         <div class="faq-item reveal gradient-border rounded-xl overflow-hidden" style="transition-delay: 0.05s;">
           <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
             <span class="font-semibold text-sm md:text-base">Бесплатно ли это?</span>
@@ -773,7 +734,6 @@
           </div>
         </div>
 
-        <!-- FAQ 2 -->
         <div class="faq-item reveal gradient-border rounded-xl overflow-hidden" style="transition-delay: 0.1s;">
           <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
             <span class="font-semibold text-sm md:text-base">Как вы получаете такие точные прогнозы?</span>
@@ -786,7 +746,6 @@
           </div>
         </div>
 
-        <!-- FAQ 3 -->
         <div class="faq-item reveal gradient-border rounded-xl overflow-hidden" style="transition-delay: 0.15s;">
           <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
             <span class="font-semibold text-sm md:text-base">Нужно ли разбираться в майя?</span>
@@ -799,7 +758,6 @@
           </div>
         </div>
 
-        <!-- FAQ 4 -->
         <div class="faq-item reveal gradient-border rounded-xl overflow-hidden" style="transition-delay: 0.2s;">
           <button class="faq-toggle w-full text-left px-6 py-5 flex items-center justify-between gap-4" onclick="toggleFaq(this)">
             <span class="font-semibold text-sm md:text-base">Мои данные в безопасности?</span>
@@ -819,7 +777,6 @@
   <section class="py-20 md:py-32 relative overflow-hidden">
     <div class="absolute inset-0">
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px]">
-        <!-- Light rays -->
         <div class="absolute inset-0 opacity-10">
           <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-full bg-gradient-to-b from-ray-cyan via-ray-purple to-transparent"></div>
           <div class="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-full bg-gradient-to-b from-ray-cyan/20 via-ray-purple/10 to-transparent blur-xl"></div>
@@ -830,7 +787,6 @@
     </div>
 
     <div class="max-w-3xl mx-auto px-4 text-center relative z-10 reveal">
-      <!-- Glyph -->
       <div class="text-5xl md:text-7xl mb-6 glow-gold">✧</div>
 
       <h2 class="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -844,7 +800,7 @@
         Дата рождения — это не просто число. Это код твоей души. Расшифруй его прямо сейчас.
       </p>
 
-      <a href="https://t.me/d_1raybot" target="_blank" rel="noopener"
+      <a href="https://t.me/Predskazaniya_mayan_bot" target="_blank" rel="noopener"
          class="btn-glow inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-ray-cyan via-ray-purple to-ray-gold rounded-full text-white font-bold text-lg shadow-2xl shadow-ray-cyan/20 transition-all">
         <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.61 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.65-2.89 7.99-3.44 3.8-1.57 4.59-1.85 5.1-1.86.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"/>
@@ -860,7 +816,6 @@
   <footer class="py-12 border-t border-ray-border">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <!-- Logo -->
         <div class="flex items-center gap-2">
           <svg viewBox="0 0 40 40" class="w-8 h-8">
             <polygon points="20,2 38,30 2,30" fill="none" stroke="url(#footerGrad)" stroke-width="1.5"/>
@@ -877,13 +832,11 @@
           </span>
         </div>
 
-        <!-- Links -->
         <div class="flex items-center gap-6 text-sm text-gray-500">
           <a href="#" class="hover:text-ray-cyan transition-colors">Политика конфиденциальности</a>
-          <a href="https://t.me/d_1raybot" target="_blank" rel="noopener" class="hover:text-ray-cyan transition-colors">Контакт в Telegram</a>
+          <a href="https://t.me/Predskazaniya_mayan_bot" target="_blank" rel="noopener" class="hover:text-ray-cyan transition-colors">Контакт в Telegram</a>
         </div>
 
-        <!-- Copyright -->
         <div class="text-sm text-gray-600">
           1RAY © 2026
         </div>
@@ -893,7 +846,7 @@
 
   <!-- ==================== STICKY MOBILE CTA ==================== -->
   <div class="sticky-cta" id="stickyCta">
-    <a href="https://t.me/d_1raybot" target="_blank" rel="noopener"
+    <a href="https://t.me/Predskazaniya_mayan_bot" target="_blank" rel="noopener"
        class="flex items-center justify-center gap-2 w-full py-4 bg-gradient-to-r from-ray-cyan to-ray-purple rounded-full text-white font-bold text-base shadow-lg shadow-ray-cyan/30">
       <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.61 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.65-2.89 7.99-3.44 3.8-1.57 4.59-1.85 5.1-1.86.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"/>
@@ -904,7 +857,7 @@
 
   <!-- ==================== SCRIPTS ==================== -->
   <script>
-    // Generate star particles - more stars, varied sizes and colors
+    // Generate star particles
     const starsContainer = document.getElementById('stars');
     const starCount = 120;
     for (let i = 0; i < starCount; i++) {
@@ -937,11 +890,9 @@
       shootingContainer.appendChild(star);
       setTimeout(() => star.remove(), 3000);
     }
-    // Random shooting stars
     setInterval(() => {
       if (Math.random() < 0.3) createShootingStar();
     }, 2000);
-    // Initial burst
     setTimeout(createShootingStar, 1000);
     setTimeout(createShootingStar, 2500);
 
@@ -957,7 +908,6 @@
 
     // Header scroll effect
     const header = document.getElementById('header');
-    let lastScroll = 0;
     window.addEventListener('scroll', () => {
       const currentScroll = window.scrollY;
       if (currentScroll > 50) {
@@ -965,7 +915,6 @@
       } else {
         header.classList.remove('bg-ray-dark/80', 'backdrop-blur-xl', 'border-b', 'border-ray-border/50');
       }
-      lastScroll = currentScroll;
     });
 
     // Mobile menu toggle
@@ -974,8 +923,6 @@
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
-
-    // Close mobile menu on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -986,11 +933,7 @@
     function toggleFaq(button) {
       const item = button.closest('.faq-item');
       const wasOpen = item.classList.contains('open');
-
-      // Close all
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-
-      // Toggle current
       if (!wasOpen) {
         item.classList.add('open');
       }
@@ -1019,7 +962,7 @@
       });
     });
 
-    // Mouse parallax - stars follow cursor slightly
+    // Mouse parallax
     const heroSection = document.querySelector('section');
     heroSection.addEventListener('mousemove', (e) => {
       const x = (e.clientX / window.innerWidth - 0.5) * 20;
